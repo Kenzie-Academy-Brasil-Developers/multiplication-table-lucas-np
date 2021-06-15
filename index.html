@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multiplication Table</title>
+  </head>
+
+  <body>
+    <h1>Multiplication Table</h1>
+    <script>
+      function tabela(n) {
+        let x = [];
+        for (let i = 0; i <= n; i++) {
+            x[i] = [i]
+          for(let j = 0; j <= n; j++){
+            x[i][j] = j*i;
+            }
+           
+        }
+        console.table(x);
+      }
+      //console.log(tabela(10)); para testar com parametro 10
+    </script>
+  </body>
+</html>
